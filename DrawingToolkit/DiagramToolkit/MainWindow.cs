@@ -89,11 +89,6 @@ namespace DiagramToolkit
             ICanvas canvas1 = new DefaultCanvas();
             canvas1.Name = "Untitled-1";
             this.editor.AddCanvas(canvas1);
-
-            ICanvas canvas2 = new DefaultCanvas();
-            canvas2.Name = "Untitled-2";
-            this.editor.AddCanvas(canvas2);
-
             #endregion
 
             #region Commands
@@ -126,14 +121,14 @@ namespace DiagramToolkit
             DefaultMenuItem redoMenuItem = new DefaultMenuItem("Redo");
             editMenuItem.AddMenuItem(redoMenuItem);
 
-            DefaultMenuItem viewMenuItem = new DefaultMenuItem("View");
-            this.menubar.AddMenuItem(viewMenuItem);
+            //DefaultMenuItem viewMenuItem = new DefaultMenuItem("View");
+            //this.menubar.AddMenuItem(viewMenuItem);
 
-            DefaultMenuItem helpMenuItem = new DefaultMenuItem("Help");
-            this.menubar.AddMenuItem(helpMenuItem);
+            //DefaultMenuItem helpMenuItem = new DefaultMenuItem("Help");
+            //this.menubar.AddMenuItem(helpMenuItem);
 
-            DefaultMenuItem aboutMenuItem = new DefaultMenuItem("About");
-            helpMenuItem.AddMenuItem(aboutMenuItem);
+            //DefaultMenuItem aboutMenuItem = new DefaultMenuItem("About");
+            //helpMenuItem.AddMenuItem(aboutMenuItem);
 
             #endregion
 

@@ -100,6 +100,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CursorSet.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="DefaultToolbox.resx">
+      <DependentUpon>DefaultToolbox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IconSet.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>IconSet.Designer.cs</LastGenOutput>
