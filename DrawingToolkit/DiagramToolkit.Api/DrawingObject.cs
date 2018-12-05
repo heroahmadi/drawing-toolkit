@@ -1,4 +1,5 @@
-﻿using DiagramToolkit.States;
+﻿using DiagramToolkit.Api;
+using DiagramToolkit.States;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -6,9 +7,10 @@ using System.Drawing;
 
 namespace DiagramToolkit
 {
-    public abstract class DrawingObject
+    public abstract class DrawingObject : Observable
     {
         public Guid ID { get; set; }
+        public Point centerPoint { get; set; }
 
         public DrawingState State
         {
