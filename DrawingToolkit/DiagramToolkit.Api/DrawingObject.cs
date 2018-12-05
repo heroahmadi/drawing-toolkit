@@ -26,7 +26,7 @@ namespace DiagramToolkit
         public DrawingObject()
         {
             ID = Guid.NewGuid();
-            this.ChangeState(PreviewState.GetInstance()); //default initial state
+            this.ChangeState(PreviewState.GetInstance());
         }
 
         public abstract bool Add(DrawingObject obj);
