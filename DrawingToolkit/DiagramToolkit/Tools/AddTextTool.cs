@@ -35,7 +35,7 @@ namespace DiagramToolkit.Tools
         {
             this.Name = "Add Text Tool";
             this.ToolTipText = "Add Text Tool";
-            this.Image = IconSet.circle;
+            this.Image = IconSet.add_text_tool;
             this.CheckOnClick = true;
         }
 

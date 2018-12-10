@@ -63,6 +63,16 @@ namespace DiagramToolkit {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_text_tool {
+            get {
+                object obj = ResourceManager.GetObject("add_text_tool", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bounding_box {
             get {
                 object obj = ResourceManager.GetObject("bounding_box", resourceCulture);
