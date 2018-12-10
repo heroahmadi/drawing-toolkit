@@ -15,6 +15,7 @@ namespace DrawingToolkit.Shapes
         public int Y { get; set; }
         public int cirWidth { get; set; }
         public int cirHeight { get; set; }
+        private List<DrawingObject> listDrawingObjects = new List<DrawingObject>();
 
         private Pen pen;
 
@@ -67,17 +68,23 @@ namespace DrawingToolkit.Shapes
         {
             this.X += xAmount;
             this.Y += yAmount;
-            //this.Translate(x, y, xAmount, yAmount);
+
+            foreach (DrawingObject obj in listDrawingObjects)
+            {
+                obj.Translate(x, y, xAmount, yAmount);
+            }
         }
 
         public override bool Add(DrawingObject obj)
         {
-            throw new NotImplementedException();
+            listDrawingObjects.Add(obj);
+            return true;
         }
 
         public override bool Remove(DrawingObject obj)
         {
-            throw new NotImplementedException();
+            listDrawingObjects.Remove(obj);
+            return true;
         }
     }
 }

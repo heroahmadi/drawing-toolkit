@@ -70,6 +70,5 @@ namespace DiagramToolkit
             Debug.WriteLine("Object id=" + ID.ToString() + " is deselected.");
             this.state.Deselect(this);
         }
-
     }
 }

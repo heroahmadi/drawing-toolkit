@@ -1,4 +1,5 @@
 ﻿using DiagramToolkit.Shapes;
+using DiagramToolkit.States;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -82,7 +83,9 @@ namespace DiagramToolkit.Tools
         public void ToolMouseDoubleClick(object sender, MouseEventArgs e)
         {
             Text text = new Text();
-            text.Value = "Untitled";
+            //text.X = selectedObject.X;
+            //text.Y = selectedObject.Y;
+            text.Value = "Add Text";
             selectedObject.Add(text);
             Debug.WriteLine("selection tool double click");
         }
@@ -94,7 +97,12 @@ namespace DiagramToolkit.Tools
 
         public void ToolKeyDown(object sender, KeyEventArgs e)
         {
-            
+            if (e.Control && e.KeyCode == Keys.E)
+            {
+                Debug.WriteLine("Edit");
+                Debug.WriteLine(selectedObject.State);
+                selectedObject.ChangeState(EditState.GetInstance());
+            }
         }
 
         public void ToolHotKeysDown(object sender, Keys e)

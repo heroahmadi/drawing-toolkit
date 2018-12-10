@@ -14,13 +14,13 @@ namespace DiagramToolkit.Shapes
         public int Height { get; set; }
 
         private Pen pen;
-        private List<DrawingObject> drawingObjects;
+        private List<DrawingObject> listDrawingObjects;
 
         public Rectangle()
         {
             this.pen = new Pen(Color.Black);
             pen.Width = 1.5f;
-            drawingObjects = new List<DrawingObject>();
+            listDrawingObjects = new List<DrawingObject>();
         }
 
         public Rectangle(int x, int y) : this()
@@ -51,7 +51,7 @@ namespace DiagramToolkit.Shapes
             this.pen.DashStyle = DashStyle.Solid;
             GetGraphics().DrawRectangle(this.pen, X, Y, Width, Height);
 
-            foreach (DrawingObject obj in drawingObjects)
+            foreach (DrawingObject obj in listDrawingObjects)
             {
                 obj.SetGraphics(GetGraphics());
                 obj.RenderOnStaticView();
@@ -64,7 +64,7 @@ namespace DiagramToolkit.Shapes
             this.pen.DashStyle = DashStyle.Solid;
             GetGraphics().DrawRectangle(this.pen, X, Y, Width, Height);
 
-            foreach (DrawingObject obj in drawingObjects)
+            foreach (DrawingObject obj in listDrawingObjects)
             {
                 obj.SetGraphics(GetGraphics());
                 obj.RenderOnEditingView();
@@ -78,7 +78,7 @@ namespace DiagramToolkit.Shapes
             this.pen.DashStyle = DashStyle.DashDot;
             GetGraphics().DrawRectangle(this.pen, X, Y, Width, Height);
 
-            foreach (DrawingObject obj in drawingObjects)
+            foreach (DrawingObject obj in listDrawingObjects)
             {
                 obj.SetGraphics(GetGraphics());
                 obj.RenderOnPreview();
@@ -90,7 +90,7 @@ namespace DiagramToolkit.Shapes
             this.X += xAmount;
             this.Y += yAmount;
 
-            foreach (DrawingObject obj in drawingObjects)
+            foreach (DrawingObject obj in listDrawingObjects)
             {
                 obj.Translate(x, y, xAmount, yAmount);
             }
@@ -98,15 +98,13 @@ namespace DiagramToolkit.Shapes
 
         public override bool Add(DrawingObject obj)
         {
-            drawingObjects.Add(obj);
-
+            listDrawingObjects.Add(obj);
             return true;
         }
 
         public override bool Remove(DrawingObject obj)
         {
-            drawingObjects.Remove(obj);
-
+            listDrawingObjects.Remove(obj);
             return true;
         }
     }
