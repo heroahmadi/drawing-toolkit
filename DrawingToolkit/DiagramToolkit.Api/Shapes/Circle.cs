@@ -50,18 +50,36 @@ namespace DrawingToolkit.Shapes
             this.pen.Color = Color.Black;
             this.pen.DashStyle = DashStyle.Solid;
             GetGraphics().DrawEllipse(pen, X, Y, cirWidth, cirHeight);
+
+            foreach (DrawingObject obj in listDrawingObjects)
+            {
+                obj.SetGraphics(GetGraphics());
+                obj.RenderOnEditingView();
+            }
         }
         public override void RenderOnEditingView()
         {
             this.pen.Color = Color.Blue;
             this.pen.DashStyle = DashStyle.Solid;
             GetGraphics().DrawEllipse(pen, X, Y, cirWidth, cirHeight);
+
+            foreach (DrawingObject obj in listDrawingObjects)
+            {
+                obj.SetGraphics(GetGraphics());
+                obj.RenderOnEditingView();
+            }
         }
         public override void RenderOnPreview()
         {
             this.pen.Color = Color.Red;
             this.pen.DashStyle = DashStyle.DashDot;
             GetGraphics().DrawEllipse(pen, X, Y, cirWidth, cirHeight);
+
+            foreach (DrawingObject obj in listDrawingObjects)
+            {
+                obj.SetGraphics(GetGraphics());
+                obj.RenderOnPreview();
+            }
         }
 
         public override void Translate(int x, int y, int xAmount, int yAmount)

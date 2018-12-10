@@ -25,6 +25,12 @@ namespace DiagramToolkit.Shapes
                GraphicsUnit.Pixel);
         }
 
+        public Text(int X, int Y) : this()
+        {
+            this.X = X;
+            this.Y = Y;
+        }
+
         public override bool Add(DrawingObject obj)
         {
             return false;

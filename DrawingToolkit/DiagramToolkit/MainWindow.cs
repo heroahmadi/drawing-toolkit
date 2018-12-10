@@ -151,6 +151,7 @@ namespace DiagramToolkit
             this.toolbox.AddTool(new LineTool());
             this.toolbox.AddTool(new RectangleTool());
             this.toolbox.AddTool(new CircleTool());
+            this.toolbox.AddTool(new AddTextTool());
 
             if (plugins != null)
             {
