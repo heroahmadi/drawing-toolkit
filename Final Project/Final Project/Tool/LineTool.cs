@@ -40,7 +40,7 @@ namespace Final_Project.Tool
         {
             this.Name = "Line Tool";
             this.ToolTipText = "Line Tool";
-            this.Image = IconSet.circle;
+            this.Image = IconSet.line;
             this.CheckOnClick = true;
         }
 
