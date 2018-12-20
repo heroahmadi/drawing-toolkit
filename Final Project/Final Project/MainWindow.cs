@@ -38,6 +38,7 @@ namespace Final_Project
             this.toolbox.AddSeparator();
             this.toolbox.AddTool(new CircleTool());
             this.toolbox.AddTool(new RectangleTool());
+            this.toolbox.AddTool(new AddTextTool());
             this.toolbox.ToolSelected += Toolbox_ToolSelected;
             #endregion
         }
