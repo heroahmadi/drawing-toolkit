@@ -77,7 +77,16 @@ namespace Final_Project.Tool
         public void ToolKeyDown(object sender, KeyEventArgs e)
         {
             String currentText = this.selectedText.GetText();
-            this.selectedText.SetText(currentText + e.KeyCode.ToString());
+            if(e.KeyCode == Keys.Back)
+            {
+                Debug.WriteLine("Backspace pressed");
+                this.selectedText.SetText(currentText.Remove(currentText.Length - 1));
+            }
+            else
+            {
+                Debug.WriteLine(e.KeyCode.ToString()+" pressed");
+                this.selectedText.SetText(currentText + e.KeyCode.ToString());
+            }
         }
 
         public void ToolKeyUp(object sender, KeyEventArgs e)
