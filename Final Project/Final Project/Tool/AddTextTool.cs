@@ -95,6 +95,11 @@ namespace Final_Project.Tool
             Debug.WriteLine("oke");
         }
 
+        public void ToolKeyPressDown(object sender, KeyPressEventArgs e)
+        {
+            Debug.WriteLine("oke");
+        }
+
         public void ToolKeyUp(object sender, KeyEventArgs e)
         {
 

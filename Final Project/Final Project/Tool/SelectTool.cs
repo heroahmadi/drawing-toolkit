@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Final_Project.State;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Final_Project.Tool
 {
@@ -111,6 +112,11 @@ namespace Final_Project.Tool
                     temp.Clear();
                 }
             }
+        }
+
+        public void ToolKeyPressDown(object sender, KeyPressEventArgs e)
+        {
+            Debug.WriteLine("oke");
         }
 
         public void ToolKeyUp(object sender, KeyEventArgs e)

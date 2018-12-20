@@ -17,6 +17,7 @@ namespace Final_Project
         void ToolMouseMove(object sender, MouseEventArgs e);
         void ToolMouseUp(object sender, MouseEventArgs e);
         void ToolKeyDown(object sender, KeyEventArgs e);
+        void ToolKeyPressDown(object sender, KeyPressEventArgs e);
         void ToolKeyUp(object sender, KeyEventArgs e);
     }
 }

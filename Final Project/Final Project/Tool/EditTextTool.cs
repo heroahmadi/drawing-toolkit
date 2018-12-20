@@ -77,16 +77,49 @@ namespace Final_Project.Tool
         public void ToolKeyDown(object sender, KeyEventArgs e)
         {
             String currentText = this.selectedText.GetText();
-            if(e.KeyCode == Keys.Back)
+            if (e.KeyCode == Keys.Back)
             {
                 Debug.WriteLine("Backspace pressed");
                 this.selectedText.SetText(currentText.Remove(currentText.Length - 1));
             }
-            else
+            else if (char.IsLetterOrDigit((char)e.KeyCode))
             {
-                Debug.WriteLine(e.KeyCode.ToString()+" pressed");
-                this.selectedText.SetText(currentText + e.KeyCode.ToString());
+                Char insertedKey;
+                Debug.WriteLine(e.KeyCode.ToString() + " pressed");
+                if (char.IsDigit((char)e.KeyCode))
+                {
+                     insertedKey = (char)(int)e.KeyCode;
+                }
+                else if (!Control.IsKeyLocked(Keys.CapsLock))
+                {
+                    insertedKey = e.KeyCode.ToString().ToLower()[0];
+                }
+                else
+                {
+                    insertedKey = e.KeyCode.ToString()[0];
+                }
+                this.selectedText.SetText(currentText + insertedKey);
             }
+        }
+
+        public void ToolKeyPressDown(object sender, KeyPressEventArgs e)
+        {
+            //String currentText = this.selectedText.GetText();
+            //if(e.KeyChar == (char)Keys.Back)
+            //{
+            //    Debug.WriteLine("Backspace pressed");
+            //    this.selectedText.SetText(currentText.Remove(currentText.Length - 1));
+            //}
+            //else
+            //{
+            //    String insertedString = e.KeyChar.ToString();
+            //    if (!Control.IsKeyLocked(Keys.CapsLock))
+            //    {
+            //        insertedString = insertedString.ToLower();
+            //    }
+            //    Debug.WriteLine(insertedString + " pressed");
+            //    this.selectedText.SetText(currentText + insertedString);
+            //}
         }
 
         public void ToolKeyUp(object sender, KeyEventArgs e)
