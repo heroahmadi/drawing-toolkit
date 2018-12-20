@@ -19,7 +19,7 @@ namespace Final_Project.Shape
         public string Value { get; private set; }
 
         private Pen pen;
-        private List<DrawingObject> listDrawingObjects;
+        public List<DrawingObject> listDrawingObjects;
         
 
         public Rectangle() : base()
@@ -147,6 +147,11 @@ namespace Final_Project.Shape
             //point.X = startPoint.X;
             //point.Y = (startPoint.Y + finishPoint.Y) / 2;
             return point;
+        }
+
+        public override List<DrawingObject> GetDrawingObjects()
+        {
+            return this.listDrawingObjects;
         }
     }
 }

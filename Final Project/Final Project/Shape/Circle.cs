@@ -142,5 +142,11 @@ namespace Final_Project.Shape
             //point.Y = (startPoint.Y + finishPoint.Y) / 2;
             return point;
         }
+
+        public override List<DrawingObject> GetDrawingObjects()
+        {
+            return this.listDrawingObjects;
+        }
+
     }
 }

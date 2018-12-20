@@ -88,6 +88,9 @@
     <Compile Include="Tool\CircleTool.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Tool\EditTextTool.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Tool\RectangleTool.cs">
       <SubType>Component</SubType>
     </Compile>

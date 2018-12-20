@@ -125,5 +125,10 @@ namespace Final_Project
         {
             throw new NotImplementedException();
         }
+
+        public override List<DrawingObject> GetDrawingObjects()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

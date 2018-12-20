@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing.Drawing2D;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Final_Project.Shape
 {
@@ -81,6 +82,7 @@ namespace Final_Project.Shape
         {
             if ((x >= X && x <= X + textSize.Width) && (y >= Y && y <= Y + textSize.Height))
             {
+                Debug.WriteLine("Text selected");
                 return true;
             }
             return false;
@@ -118,6 +120,11 @@ namespace Final_Project.Shape
             //point.X = startPoint.X;
             //point.Y = (startPoint.Y + finishPoint.Y) / 2;
             return point;
+        }
+
+        public override List<DrawingObject> GetDrawingObjects()
+        {
+            throw new NotImplementedException();
         }
     }
 }
