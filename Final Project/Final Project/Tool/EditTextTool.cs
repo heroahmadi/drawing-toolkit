@@ -76,8 +76,8 @@ namespace Final_Project.Tool
 
         public void ToolKeyDown(object sender, KeyEventArgs e)
         {
-            Debug.WriteLine(this.selectedText.GetText());
-            Debug.WriteLine("oke");
+            String currentText = this.selectedText.GetText();
+            this.selectedText.SetText(currentText + e.KeyCode.ToString());
         }
 
         public void ToolKeyUp(object sender, KeyEventArgs e)
