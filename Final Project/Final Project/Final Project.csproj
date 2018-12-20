@@ -74,6 +74,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shape\Circle.cs" />
+    <Compile Include="Shape\LineSegment.cs" />
     <Compile Include="Shape\Rectangle.cs" />
     <Compile Include="Shape\Text.cs" />
     <Compile Include="State\EditState.cs" />
@@ -89,6 +90,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Tool\EditTextTool.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tool\LineTool.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Tool\RectangleTool.cs">
