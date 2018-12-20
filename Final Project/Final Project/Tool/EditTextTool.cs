@@ -40,7 +40,7 @@ namespace Final_Project.Tool
         {
             this.Name = "Edit Text Tool";
             this.ToolTipText = "Edit Text Tool";
-            this.Image = IconSet.add_text_tool;
+            this.Image = IconSet.edit_text;
             this.CheckOnClick = true;
         }
 

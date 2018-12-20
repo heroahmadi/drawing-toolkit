@@ -211,5 +211,8 @@
   <ItemGroup>
     <None Include="Resources\tool_shape_rounded_rectangle_square_stroke-512.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\256-256-5948f81b64e21ca7f2fdb97148a03f12-note.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
