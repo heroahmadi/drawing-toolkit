@@ -37,9 +37,9 @@ namespace Final_Project.Shape
             this.cirHeight = initHeight;
         }
 
-        private void DrawLogic()
+        private void DrawLogic(Color color)
         {
-            this.pen.Color = Color.Black;
+            this.pen.Color = color;
             this.pen.DashStyle = DashStyle.Solid;
             this.graphics.DrawEllipse(pen, X, Y, cirWidth, cirHeight);
         }
@@ -56,7 +56,7 @@ namespace Final_Project.Shape
 
         public override void DrawEdit()
         {
-            DrawLogic();
+            DrawLogic(Color.Blue);
             foreach (DrawingObject obj in listDrawingObjects)
             {
                 obj.graphics = this.graphics;
@@ -66,7 +66,7 @@ namespace Final_Project.Shape
 
         public override void DrawPreview()
         {
-            DrawLogic();
+            DrawLogic(Color.Black);
             foreach (DrawingObject obj in listDrawingObjects)
             {
                 obj.graphics = this.graphics;
@@ -76,7 +76,7 @@ namespace Final_Project.Shape
 
         public override void DrawStatic()
         {
-            DrawLogic();
+            DrawLogic(Color.Black);
             foreach (DrawingObject obj in listDrawingObjects)
             {
                 obj.graphics = this.graphics;

@@ -14,7 +14,6 @@ namespace Final_Project.Tool
     {
         private ICanvas canvas;
         private DrawingObject selectedText;
-        private string textValue;
 
         public Cursor Cursor
         {
@@ -55,6 +54,8 @@ namespace Final_Project.Tool
                     if (obj is Text)
                     {
                         Debug.WriteLine("text inside selected");
+                        canvas.DeselectAll();
+                        canvas.SelectObject(e.X, e.Y);
                         this.selectedText = obj;
                     }
                 }
@@ -93,14 +94,7 @@ namespace Final_Project.Tool
 
         public void ToolKeyPressDown(object sender, KeyPressEventArgs e)
         {
-            //if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
-            //{
-            //    Debug.WriteLine("Shift pressed");
-            //    if (char.IsDigit(e.KeyChar))
-            //    {
-            //        insertedKey = (char)(int)e.KeyCode;
-            //    }
-            //}
+            throw new NotImplementedException();
         }
 
         public void ToolKeyUp(object sender, KeyEventArgs e)
@@ -163,7 +157,7 @@ namespace Final_Project.Tool
                 case Keys.Oem5: return (shift ? '|' : '\\');
                 case Keys.Oem6: return (shift ? '}' : ']');
                 case Keys.Tab: return '\t';
-                case Keys.Space: return ' ';
+                case Keys.Space: return '-';
 
                 // Number Pad
                 case Keys.NumPad0: return '0';

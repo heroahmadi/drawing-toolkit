@@ -41,27 +41,17 @@ namespace Final_Project.Shape
             this.Height = initHeight;
         }
 
-        private void DrawLogic()
+        private void DrawLogic(Color color)
         {
-            this.pen.Color = Color.Black;
+            this.pen.Color = color;
             this.pen.DashStyle = DashStyle.Solid;
             this.graphics.DrawRectangle(this.pen, X, Y, Width, Height);
 
         }
 
-        //private void DrawText()
-        //{
-        //    size = this.graphics.MeasureString(Value, font);
-        //    float x = (finishPoint.X + startPoint.X) / 2 - (size.Width / 2);
-        //    float y = finishPoint.Y + 10;
-        //    PointF point = new PointF(x, y);
-        //    this.graphics.SmoothingMode = SmoothingMode.AntiAlias;
-        //    this.graphics.DrawString(Value, font, brush, point);
-        //}
-
         public override void DrawEdit()
         {
-            DrawLogic();
+            DrawLogic(Color.Blue);
             foreach (DrawingObject obj in listDrawingObjects)
             {
                 obj.graphics = this.graphics;
@@ -71,7 +61,7 @@ namespace Final_Project.Shape
 
         public override void DrawPreview()
         {
-            DrawLogic();
+            DrawLogic(Color.Black);
             foreach (DrawingObject obj in listDrawingObjects)
             {
                 obj.graphics = this.graphics;
@@ -81,7 +71,7 @@ namespace Final_Project.Shape
 
         public override void DrawStatic()
         {
-            DrawLogic();
+            DrawLogic(Color.Black);
             foreach (DrawingObject obj in listDrawingObjects)
             {
                 obj.graphics = this.graphics;

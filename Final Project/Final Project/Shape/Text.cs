@@ -44,16 +44,6 @@ namespace Final_Project.Shape
             textSize = this.graphics.MeasureString(Value, font);
         }
 
-        //private void DrawText()
-        //{
-        //    size = this.graphics.MeasureString(Value, font);
-        //    float x = (finishPoint.X + startPoint.X) / 2 - (size.Width / 2);
-        //    float y = finishPoint.Y + 10;
-        //    PointF point = new PointF(x, y);
-        //    this.graphics.SmoothingMode = SmoothingMode.AntiAlias;
-        //    this.graphics.DrawString(Value, font, brush, point);
-        //}
-
         public override void DrawEdit()
         {
             DrawLogic();
