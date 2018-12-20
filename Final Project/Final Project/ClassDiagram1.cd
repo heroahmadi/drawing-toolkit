@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Final_Project.DefaultCanvas" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAApAIABmUCBAAQAAAAAAAACAAAAQAAAAA=</HashCode>
+      <FileName>DefaultCanvas.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Final_Project.DefaultToolbox" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAgAgAAAAAAAAAAAAEAAAAAAgAABQAAAAAA=</HashCode>
+      <FileName>DefaultToolbox.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Final_Project.DrawingGroup">
+    <Position X="5.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAAAIAAAIAgBgA4AIAQAAAAAAAAEAAAAAIAAAAAAAI=</HashCode>
+      <FileName>DrawingGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.DrawingObject">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAIAAAAAIAgBgI4AIAAAAAEAIAAEAhEAAAAAAAACAI=</HashCode>
+      <FileName>DrawingObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Final_Project.DrawingState">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAgAAAAAAAAAAAAAAAAAEAAAAAAAACAI=</HashCode>
+      <FileName>DrawingState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.IconSet" Collapsed="true">
+    <Position X="11.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAIABEAAAAQAEAABIEAAAAAACAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.MainWindow" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAQAAACAAAACAAAAAAgAIAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.Program" Collapsed="true">
+    <Position X="9.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.TextForm" Collapsed="true">
+    <Position X="11.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAIIAAAEEAAAAAAAAA=</HashCode>
+      <FileName>TextForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.Properties.Resources" Collapsed="true">
+    <Position X="11.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.Properties.Settings" Collapsed="true">
+    <Position X="9.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.Shape.Actor">
+    <Position X="14.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEIACAAAAoAAAAA4AIgAAAAAAAAAECAAAAAAEAAAIAE=</HashCode>
+      <FileName>Shape\Actor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.Shape.Connector">
+    <Position X="0.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEQACAAAAIAAAAA4AIhAAAAAAAAAEAAAAAAAEAAAAAE=</HashCode>
+      <FileName>Shape\Connector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Final_Project.Shape.ConnectorDotDot">
+    <Position X="3" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEQACAAAAIAAAAA4AIhAAAAAAAAAEAAAAAAAEAAAAAE=</HashCode>
+      <FileName>Shape\ConnectorDotDot.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Final_Project.Shape.Line">
+    <Position X="7.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAACAAAAIAAAAA4AIgAAAAAAAAAEAAAAAAAEAAAAAE=</HashCode>
+      <FileName>Shape\Line.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.Shape.Text">
+    <Position X="9.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEIAQAAAAoAAAAA4AIAAAAgAAAAAEAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Shape\Text.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.Shape.UseCase">
+    <Position X="12" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEIEAAAAAoQAAAA8AIgAAAAAAAAAECAAAAAAAAAAIAA=</HashCode>
+      <FileName>Shape\UseCase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.State.EditState">
+    <Position X="5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAgAAAAAAAAAABABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>State\EditState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.State.PreviewState">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAABABAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>State\PreviewState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.State.StaticState">
+    <Position X="2.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAABABAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>State\StaticState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Final_Project.Tool.ActorTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAAQAAAAAAgIIAAAACAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Tool\ActorTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Final_Project.Tool.ConnectorDotDotTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQCAAQAAAAAAgApAAAACAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Tool\ConnectorDotDotTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Final_Project.Tool.ConnectorTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQCAAQAAAAAAgApAAAACAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Tool\ConnectorTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Final_Project.Tool.LineTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAQAAAQAAAAAAgAIAAAACAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Tool\LineTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Final_Project.Tool.SelectTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQCAAQAAAAAAgAIAAAACAAAAIACAAAAAAAIAAgA=</HashCode>
+      <FileName>Tool\SelectTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Final_Project.Tool.TextTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAAQAAAAAAgAIAAAACAAAAAAAIAAAAAAAAAgA=</HashCode>
+      <FileName>Tool\TextTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Final_Project.Tool.UseCaseTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAQAAAQAAAAAAgAIAAAACAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Tool\UseCaseTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Final_Project.ICanvas" Collapsed="true">
+    <Position X="9.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAIABCQCAAAAAAAAAAAACAAAAQAAAAA=</HashCode>
+      <FileName>ICanvas.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Final_Project.IObservable" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAIAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>IObservable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Final_Project.IObserver" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Final_Project.ITool" Collapsed="true">
+    <Position X="13.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAAQAAAAAAgAIAAAQCAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>ITool.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Final_Project.IToolbox" Collapsed="true">
+    <Position X="11.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAEAAAAAAAAABQAAAAAA=</HashCode>
+      <FileName>IToolbox.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Delegate Name="Final_Project.ToolSelectedEventHandler" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>IToolbox.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
