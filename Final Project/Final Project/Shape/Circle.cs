@@ -37,20 +37,12 @@ namespace Final_Project.Shape
             this.cirHeight = initHeight;
         }
 
-        //private void DrawLogic()
-        //{
-        //    Point joint = new Point((finishPoint.X + startPoint.X) / 2, (int)(startPoint.Y + (finishPoint.Y - startPoint.Y) * 0.7));
-        //    Point joint2 = new Point((finishPoint.X + startPoint.X) / 2, (int)(startPoint.Y + (finishPoint.Y - startPoint.Y) * 0.3));
-
-        //    this.graphics.SmoothingMode = SmoothingMode.AntiAlias;
-        //    this.graphics.DrawEllipse(pen, startPoint.X + (finishPoint.X - startPoint.X) / 4, startPoint.Y, (finishPoint.X - startPoint.X) / 2, (int)((finishPoint.Y - startPoint.Y) * 0.25));
-        //    this.graphics.DrawLine(pen, joint, this.finishPoint);
-        //    this.graphics.DrawLine(pen, new Point(startPoint.X, finishPoint.Y), joint);
-        //    this.graphics.DrawLine(pen, new Point((finishPoint.X + startPoint.X) / 2, (int)(startPoint.Y + (finishPoint.Y - startPoint.Y) * 0.25)), joint);
-        //    this.graphics.DrawLine(pen, joint2, new Point(finishPoint.X, (int)(startPoint.Y + (finishPoint.Y - startPoint.Y) * 0.6)));
-        //    this.graphics.DrawLine(pen, new Point(startPoint.X, (int)(startPoint.Y + (finishPoint.Y - startPoint.Y) * 0.6)), joint2);
-
-        //}
+        private void DrawLogic()
+        {
+            this.pen.Color = Color.Black;
+            this.pen.DashStyle = DashStyle.Solid;
+            this.graphics.DrawEllipse(pen, X, Y, cirWidth, cirHeight);
+        }
 
         //private void DrawText()
         //{
@@ -64,10 +56,7 @@ namespace Final_Project.Shape
 
         public override void DrawEdit()
         {
-            this.pen.Color = Color.Black;
-            this.pen.DashStyle = DashStyle.Solid;
-            this.graphics.DrawEllipse(pen, X, Y, cirWidth, cirHeight);
-
+            DrawLogic();
             foreach (DrawingObject obj in listDrawingObjects)
             {
                 obj.graphics = this.graphics;
@@ -77,10 +66,7 @@ namespace Final_Project.Shape
 
         public override void DrawPreview()
         {
-            this.pen.Color = Color.Black;
-            this.pen.DashStyle = DashStyle.Solid;
-            this.graphics.DrawEllipse(pen, X, Y, cirWidth, cirHeight);
-
+            DrawLogic();
             foreach (DrawingObject obj in listDrawingObjects)
             {
                 obj.graphics = this.graphics;
@@ -90,10 +76,7 @@ namespace Final_Project.Shape
 
         public override void DrawStatic()
         {
-            this.pen.Color = Color.Black;
-            this.pen.DashStyle = DashStyle.Solid;
-            this.graphics.DrawEllipse(pen, X, Y, cirWidth, cirHeight);
-
+            DrawLogic();
             foreach (DrawingObject obj in listDrawingObjects)
             {
                 obj.graphics = this.graphics;
