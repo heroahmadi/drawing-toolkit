@@ -99,26 +99,19 @@ namespace Final_Project.Tool
                     insertedKey = e.KeyCode.ToString()[0];
                 }
                 this.selectedText.SetText(currentText + insertedKey);
+                canvas.Repaint();
             }
         }
 
         public void ToolKeyPressDown(object sender, KeyPressEventArgs e)
         {
-            //String currentText = this.selectedText.GetText();
-            //if(e.KeyChar == (char)Keys.Back)
+            //if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
             //{
-            //    Debug.WriteLine("Backspace pressed");
-            //    this.selectedText.SetText(currentText.Remove(currentText.Length - 1));
-            //}
-            //else
-            //{
-            //    String insertedString = e.KeyChar.ToString();
-            //    if (!Control.IsKeyLocked(Keys.CapsLock))
+            //    Debug.WriteLine("Shift pressed");
+            //    if (char.IsDigit(e.KeyChar))
             //    {
-            //        insertedString = insertedString.ToLower();
+            //        insertedKey = (char)(int)e.KeyCode;
             //    }
-            //    Debug.WriteLine(insertedString + " pressed");
-            //    this.selectedText.SetText(currentText + insertedString);
             //}
         }
 
