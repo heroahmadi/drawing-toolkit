@@ -41,7 +41,7 @@ namespace Final_Project.Tool
         {
             this.Name = "Circle Tool";
             this.ToolTipText = "Circle Tool";
-            this.Image = IconSet.actor;
+            this.Image = IconSet.circle;
             this.CheckOnClick = true;
         }
 

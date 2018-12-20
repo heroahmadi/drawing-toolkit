@@ -123,14 +123,16 @@ namespace Final_Project.Shape
             this.Value = text;
         }
 
-        public override bool Add(DrawingObject drawingObject)
+        public override bool Add(DrawingObject obj)
         {
-            return false;
+            listDrawingObjects.Add(obj);
+            return true;
         }
 
-        public override bool Remove(DrawingObject drawingObject)
+        public override bool Remove(DrawingObject obj)
         {
-            return false;
+            listDrawingObjects.Remove(obj);
+            return true;
         }
 
         public override Point GetCenterPoint2()

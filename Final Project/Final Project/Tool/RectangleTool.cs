@@ -40,7 +40,7 @@ namespace Final_Project.Tool
         {
             this.Name = "Rectangle Tool";
             this.ToolTipText = "Rectangle Tool";
-            this.Image = IconSet.actor;
+            this.Image = IconSet.rectangle;
             this.CheckOnClick = true;
         }
 

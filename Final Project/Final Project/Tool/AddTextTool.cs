@@ -41,7 +41,7 @@ namespace Final_Project.Tool
         {
             this.Name = "Add Text Tool";
             this.ToolTipText = "Add Text Tool";
-            this.Image = IconSet.actor;
+            this.Image = IconSet.add_text_tool;
             this.CheckOnClick = true;
         }
 

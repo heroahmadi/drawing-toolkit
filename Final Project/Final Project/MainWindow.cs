@@ -33,9 +33,6 @@ namespace Final_Project
             #region Tool
             this.toolbox.AddTool(new SelectTool());
             this.toolbox.AddSeparator();
-            this.toolbox.AddTool(new ActorTool());
-            this.toolbox.AddTool(new UseCaseTool());
-            this.toolbox.AddSeparator();
             this.toolbox.AddTool(new CircleTool());
             this.toolbox.AddTool(new RectangleTool());
             this.toolbox.AddTool(new AddTextTool());
